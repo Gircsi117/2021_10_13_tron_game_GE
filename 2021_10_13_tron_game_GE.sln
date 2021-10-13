@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2021_10_13_tron_game_GE", "2021_10_13_tron_game_GE\2021_10_13_tron_game_GE.csproj", "{27F52A15-FF27-4168-A44B-A9F1CD826B38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27F52A15-FF27-4168-A44B-A9F1CD826B38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27F52A15-FF27-4168-A44B-A9F1CD826B38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27F52A15-FF27-4168-A44B-A9F1CD826B38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27F52A15-FF27-4168-A44B-A9F1CD826B38}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {392E32ED-6DBC-449B-BB58-7BC7E929CD61}
+	EndGlobalSection
+EndGlobal
