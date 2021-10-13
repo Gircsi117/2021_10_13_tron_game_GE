@@ -71,7 +71,7 @@ namespace _2021_10_13_tron_game_GE
             timePANEL.Controls.Add(timerLBL);
             timerLBL.Text = "00:00";
             timerLBL.TextAlign = ContentAlignment.MiddleCenter;
-            timerLBL.Size = new Size(320, 100);
+            timerLBL.Size = new Size(317, 100);
             timerLBL.Location = new Point(0, 0);
             timerLBL.Font = new Font("Arial", 48);
         }
