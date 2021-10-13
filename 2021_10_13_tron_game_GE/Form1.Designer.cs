@@ -34,43 +34,43 @@ namespace _2021_10_13_tron_game_GE
             this.oraTIMER = new System.Windows.Forms.Timer(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.timePANEL = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.settingsPANEL = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+            this.sp2_cA = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
+            this.sp2_cB = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
+            this.sp2_cG = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
+            this.sp2_cR = new System.Windows.Forms.NumericUpDown();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.sp2_2 = new System.Windows.Forms.Panel();
+            this.sp2_1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
+            this.label6 = new System.Windows.Forms.Label();
+            this.sp1_cA = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.sp1_cB = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.sp1_cG = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.sp1_cR = new System.Windows.Forms.NumericUpDown();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.sp1_2 = new System.Windows.Forms.Panel();
+            this.sp1_1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.settingsPANEL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sp2_cA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sp2_cB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sp2_cG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sp2_cR)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sp1_cA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sp1_cB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sp1_cG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sp1_cR)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // alapPANEL
@@ -105,212 +105,34 @@ namespace _2021_10_13_tron_game_GE
             this.timePANEL.Size = new System.Drawing.Size(317, 100);
             this.timePANEL.TabIndex = 3;
             // 
-            // panel1
+            // settingsPANEL
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.numericUpDown5);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.numericUpDown6);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.numericUpDown7);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.numericUpDown8);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.numericUpDown4);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.numericUpDown3);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.numericUpDown2);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.numericUpDown1);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(642, 206);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(317, 429);
-            this.panel1.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(3, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Player 1:";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Gray;
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(171, 51);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(135, 181);
-            this.panel2.TabIndex = 1;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericUpDown1.Location = new System.Drawing.Point(57, 88);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(101, 29);
-            this.numericUpDown1.TabIndex = 2;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(15, 88);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 29);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "R:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(15, 123);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 29);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "G:";
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericUpDown2.Location = new System.Drawing.Point(57, 123);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(101, 29);
-            this.numericUpDown2.TabIndex = 4;
-            this.numericUpDown2.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(17, 158);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 29);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "B:";
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericUpDown3.Location = new System.Drawing.Point(57, 158);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDown3.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(101, 29);
-            this.numericUpDown3.TabIndex = 6;
-            this.numericUpDown3.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(72, 8);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(171, 37);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Beállítások";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Red;
-            this.panel3.Location = new System.Drawing.Point(43, 40);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(50, 50);
-            this.panel3.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Red;
-            this.panel4.Location = new System.Drawing.Point(43, 89);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(50, 50);
-            this.panel4.TabIndex = 1;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(17, 193);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(34, 29);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "A:";
-            // 
-            // numericUpDown4
-            // 
-            this.numericUpDown4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericUpDown4.Location = new System.Drawing.Point(57, 193);
-            this.numericUpDown4.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDown4.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(101, 29);
-            this.numericUpDown4.TabIndex = 8;
-            this.numericUpDown4.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.settingsPANEL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.settingsPANEL.Controls.Add(this.label7);
+            this.settingsPANEL.Controls.Add(this.sp2_cA);
+            this.settingsPANEL.Controls.Add(this.label8);
+            this.settingsPANEL.Controls.Add(this.sp2_cB);
+            this.settingsPANEL.Controls.Add(this.label9);
+            this.settingsPANEL.Controls.Add(this.sp2_cG);
+            this.settingsPANEL.Controls.Add(this.label10);
+            this.settingsPANEL.Controls.Add(this.sp2_cR);
+            this.settingsPANEL.Controls.Add(this.panel5);
+            this.settingsPANEL.Controls.Add(this.label11);
+            this.settingsPANEL.Controls.Add(this.label6);
+            this.settingsPANEL.Controls.Add(this.sp1_cA);
+            this.settingsPANEL.Controls.Add(this.label5);
+            this.settingsPANEL.Controls.Add(this.label4);
+            this.settingsPANEL.Controls.Add(this.sp1_cB);
+            this.settingsPANEL.Controls.Add(this.label3);
+            this.settingsPANEL.Controls.Add(this.sp1_cG);
+            this.settingsPANEL.Controls.Add(this.label2);
+            this.settingsPANEL.Controls.Add(this.sp1_cR);
+            this.settingsPANEL.Controls.Add(this.panel2);
+            this.settingsPANEL.Controls.Add(this.label1);
+            this.settingsPANEL.Location = new System.Drawing.Point(642, 206);
+            this.settingsPANEL.Name = "settingsPANEL";
+            this.settingsPANEL.Size = new System.Drawing.Size(317, 429);
+            this.settingsPANEL.TabIndex = 4;
             // 
             // label7
             // 
@@ -322,28 +144,25 @@ namespace _2021_10_13_tron_game_GE
             this.label7.TabIndex = 19;
             this.label7.Text = "A:";
             // 
-            // numericUpDown5
+            // sp2_cA
             // 
-            this.numericUpDown5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericUpDown5.Location = new System.Drawing.Point(57, 380);
-            this.numericUpDown5.Maximum = new decimal(new int[] {
+            this.sp2_cA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.sp2_cA.Location = new System.Drawing.Point(57, 380);
+            this.sp2_cA.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDown5.Minimum = new decimal(new int[] {
-            1,
+            this.sp2_cA.Name = "sp2_cA";
+            this.sp2_cA.Size = new System.Drawing.Size(101, 29);
+            this.sp2_cA.TabIndex = 18;
+            this.sp2_cA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.sp2_cA.Value = new decimal(new int[] {
+            100,
             0,
             0,
             0});
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(101, 29);
-            this.numericUpDown5.TabIndex = 18;
-            this.numericUpDown5.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.sp2_cA.ValueChanged += new System.EventHandler(this.sett_szinez);
             // 
             // label8
             // 
@@ -355,28 +174,20 @@ namespace _2021_10_13_tron_game_GE
             this.label8.TabIndex = 17;
             this.label8.Text = "B:";
             // 
-            // numericUpDown6
+            // sp2_cB
             // 
-            this.numericUpDown6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericUpDown6.Location = new System.Drawing.Point(57, 345);
-            this.numericUpDown6.Maximum = new decimal(new int[] {
+            this.sp2_cB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.sp2_cB.Location = new System.Drawing.Point(57, 345);
+            this.sp2_cB.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDown6.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(101, 29);
-            this.numericUpDown6.TabIndex = 16;
-            this.numericUpDown6.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.sp2_cB.Name = "sp2_cB";
+            this.sp2_cB.Size = new System.Drawing.Size(101, 29);
+            this.sp2_cB.TabIndex = 16;
+            this.sp2_cB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.sp2_cB.ValueChanged += new System.EventHandler(this.sett_szinez);
             // 
             // label9
             // 
@@ -388,28 +199,25 @@ namespace _2021_10_13_tron_game_GE
             this.label9.TabIndex = 15;
             this.label9.Text = "G:";
             // 
-            // numericUpDown7
+            // sp2_cG
             // 
-            this.numericUpDown7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericUpDown7.Location = new System.Drawing.Point(57, 310);
-            this.numericUpDown7.Maximum = new decimal(new int[] {
+            this.sp2_cG.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.sp2_cG.Location = new System.Drawing.Point(57, 310);
+            this.sp2_cG.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDown7.Minimum = new decimal(new int[] {
-            1,
+            this.sp2_cG.Name = "sp2_cG";
+            this.sp2_cG.Size = new System.Drawing.Size(101, 29);
+            this.sp2_cG.TabIndex = 14;
+            this.sp2_cG.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.sp2_cG.Value = new decimal(new int[] {
+            255,
             0,
             0,
             0});
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(101, 29);
-            this.numericUpDown7.TabIndex = 14;
-            this.numericUpDown7.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.sp2_cG.ValueChanged += new System.EventHandler(this.sett_szinez);
             // 
             // label10
             // 
@@ -421,54 +229,46 @@ namespace _2021_10_13_tron_game_GE
             this.label10.TabIndex = 13;
             this.label10.Text = "R:";
             // 
-            // numericUpDown8
+            // sp2_cR
             // 
-            this.numericUpDown8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericUpDown8.Location = new System.Drawing.Point(57, 275);
-            this.numericUpDown8.Maximum = new decimal(new int[] {
+            this.sp2_cR.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.sp2_cR.Location = new System.Drawing.Point(57, 275);
+            this.sp2_cR.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDown8.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(101, 29);
-            this.numericUpDown8.TabIndex = 12;
-            this.numericUpDown8.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.sp2_cR.Name = "sp2_cR";
+            this.sp2_cR.Size = new System.Drawing.Size(101, 29);
+            this.sp2_cR.TabIndex = 12;
+            this.sp2_cR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.sp2_cR.ValueChanged += new System.EventHandler(this.sett_szinez);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Gray;
-            this.panel5.Controls.Add(this.panel6);
-            this.panel5.Controls.Add(this.panel7);
+            this.panel5.Controls.Add(this.sp2_2);
+            this.panel5.Controls.Add(this.sp2_1);
             this.panel5.Location = new System.Drawing.Point(171, 238);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(135, 181);
             this.panel5.TabIndex = 11;
             // 
-            // panel6
+            // sp2_2
             // 
-            this.panel6.BackColor = System.Drawing.Color.Red;
-            this.panel6.Location = new System.Drawing.Point(43, 89);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(50, 50);
-            this.panel6.TabIndex = 1;
+            this.sp2_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            this.sp2_2.Location = new System.Drawing.Point(43, 89);
+            this.sp2_2.Name = "sp2_2";
+            this.sp2_2.Size = new System.Drawing.Size(50, 50);
+            this.sp2_2.TabIndex = 1;
             // 
-            // panel7
+            // sp2_1
             // 
-            this.panel7.BackColor = System.Drawing.Color.Red;
-            this.panel7.Location = new System.Drawing.Point(43, 40);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(50, 50);
-            this.panel7.TabIndex = 0;
+            this.sp2_1.BackColor = System.Drawing.Color.Lime;
+            this.sp2_1.Location = new System.Drawing.Point(43, 40);
+            this.sp2_1.Name = "sp2_1";
+            this.sp2_1.Size = new System.Drawing.Size(50, 50);
+            this.sp2_1.TabIndex = 0;
             // 
             // label11
             // 
@@ -480,31 +280,187 @@ namespace _2021_10_13_tron_game_GE
             this.label11.TabIndex = 10;
             this.label11.Text = "Player 2:";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Location = new System.Drawing.Point(17, 193);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(34, 29);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "A:";
+            // 
+            // sp1_cA
+            // 
+            this.sp1_cA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.sp1_cA.Location = new System.Drawing.Point(57, 193);
+            this.sp1_cA.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.sp1_cA.Name = "sp1_cA";
+            this.sp1_cA.Size = new System.Drawing.Size(101, 29);
+            this.sp1_cA.TabIndex = 8;
+            this.sp1_cA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.sp1_cA.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.sp1_cA.ValueChanged += new System.EventHandler(this.sett_szinez);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Location = new System.Drawing.Point(72, 8);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(171, 37);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Beállítások";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(17, 158);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 29);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "B:";
+            // 
+            // sp1_cB
+            // 
+            this.sp1_cB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.sp1_cB.Location = new System.Drawing.Point(57, 158);
+            this.sp1_cB.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.sp1_cB.Name = "sp1_cB";
+            this.sp1_cB.Size = new System.Drawing.Size(101, 29);
+            this.sp1_cB.TabIndex = 6;
+            this.sp1_cB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.sp1_cB.ValueChanged += new System.EventHandler(this.sett_szinez);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(15, 123);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(37, 29);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "G:";
+            // 
+            // sp1_cG
+            // 
+            this.sp1_cG.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.sp1_cG.Location = new System.Drawing.Point(57, 123);
+            this.sp1_cG.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.sp1_cG.Name = "sp1_cG";
+            this.sp1_cG.Size = new System.Drawing.Size(101, 29);
+            this.sp1_cG.TabIndex = 4;
+            this.sp1_cG.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.sp1_cG.ValueChanged += new System.EventHandler(this.sett_szinez);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(15, 88);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 29);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "R:";
+            // 
+            // sp1_cR
+            // 
+            this.sp1_cR.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.sp1_cR.Location = new System.Drawing.Point(57, 88);
+            this.sp1_cR.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.sp1_cR.Name = "sp1_cR";
+            this.sp1_cR.Size = new System.Drawing.Size(101, 29);
+            this.sp1_cR.TabIndex = 2;
+            this.sp1_cR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.sp1_cR.Value = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.sp1_cR.ValueChanged += new System.EventHandler(this.sett_szinez);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.Controls.Add(this.sp1_2);
+            this.panel2.Controls.Add(this.sp1_1);
+            this.panel2.Location = new System.Drawing.Point(171, 51);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(135, 181);
+            this.panel2.TabIndex = 1;
+            // 
+            // sp1_2
+            // 
+            this.sp1_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.sp1_2.Location = new System.Drawing.Point(43, 89);
+            this.sp1_2.Name = "sp1_2";
+            this.sp1_2.Size = new System.Drawing.Size(50, 50);
+            this.sp1_2.TabIndex = 1;
+            // 
+            // sp1_1
+            // 
+            this.sp1_1.BackColor = System.Drawing.Color.Red;
+            this.sp1_1.Location = new System.Drawing.Point(43, 40);
+            this.sp1_1.Name = "sp1_1";
+            this.sp1_1.Size = new System.Drawing.Size(50, 50);
+            this.sp1_1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(3, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Player 1:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(971, 647);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.settingsPANEL);
             this.Controls.Add(this.timePANEL);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.alapPANEL);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
+            this.settingsPANEL.ResumeLayout(false);
+            this.settingsPANEL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sp2_cA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sp2_cB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sp2_cG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sp2_cR)).EndInit();
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.sp1_cA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sp1_cB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sp1_cG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sp1_cR)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -515,32 +471,32 @@ namespace _2021_10_13_tron_game_GE
         private System.Windows.Forms.Timer oraTIMER;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel timePANEL;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel settingsPANEL;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown sp1_cB;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown sp1_cG;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown sp1_cR;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
+        private System.Windows.Forms.NumericUpDown sp2_cA;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
+        private System.Windows.Forms.NumericUpDown sp2_cB;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.NumericUpDown numericUpDown7;
+        private System.Windows.Forms.NumericUpDown sp2_cG;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.NumericUpDown numericUpDown8;
+        private System.Windows.Forms.NumericUpDown sp2_cR;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel sp2_2;
+        private System.Windows.Forms.Panel sp2_1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.NumericUpDown sp1_cA;
+        private System.Windows.Forms.Panel sp1_2;
+        private System.Windows.Forms.Panel sp1_1;
     }
 }
 

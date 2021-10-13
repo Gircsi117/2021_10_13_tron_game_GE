@@ -25,8 +25,14 @@ namespace _2021_10_13_tron_game_GE
             this.sor = sor;
             this.oszlop = oszlop;
             this.irany = irany;
-            this.p_color = p_color;
-            this.l_color = l_color;
+            this.p_color = new int[4];
+            this.l_color = new int[4];
+
+            for (int i = 0; i < 4; i++)
+            {
+                this.p_color[i] = p_color[i];
+                this.l_color[i] = l_color[i];
+            }
         }
     }
 }

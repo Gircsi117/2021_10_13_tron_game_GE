@@ -14,6 +14,8 @@ namespace _2021_10_13_tron_game_GE
     {
         public static int meret = 30; //A pálya méretét adja meg
         public static Panel[,] palya;
+        public static int[,] p_colors = new int[2, 4] { {255,0,0,100 },{0,255,0,100 } };
+
         
 
         public Form1()
@@ -106,6 +108,15 @@ namespace _2021_10_13_tron_game_GE
         private void player_general()
         {
 
+        }
+
+        private void sett_szinez(object sender, EventArgs e)
+        {
+            sp1_1.BackColor = Color.FromArgb(Convert.ToInt32(sp1_cR.Value), Convert.ToInt32(sp1_cG.Value), Convert.ToInt32(sp1_cB.Value));
+            sp1_2.BackColor = Color.FromArgb(Convert.ToInt32(sp1_cA.Value), Convert.ToInt32(sp1_cR.Value), Convert.ToInt32(sp1_cG.Value), Convert.ToInt32(sp1_cB.Value));
+            
+            sp2_1.BackColor = Color.FromArgb(Convert.ToInt32(sp2_cR.Value), Convert.ToInt32(sp2_cG.Value), Convert.ToInt32(sp2_cB.Value));
+            sp2_2.BackColor = Color.FromArgb(Convert.ToInt32(sp2_cA.Value), Convert.ToInt32(sp2_cR.Value), Convert.ToInt32(sp2_cG.Value), Convert.ToInt32(sp2_cB.Value));
         }
 
         private void button1_Click(object sender, EventArgs e)
