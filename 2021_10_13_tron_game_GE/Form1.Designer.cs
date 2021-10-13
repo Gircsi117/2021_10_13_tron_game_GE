@@ -29,7 +29,11 @@ namespace _2021_10_13_tron_game_GE
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.alapPANEL = new System.Windows.Forms.Panel();
+            this.oraTIMER = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.timePANEL = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // alapPANEL
@@ -40,12 +44,38 @@ namespace _2021_10_13_tron_game_GE
             this.alapPANEL.Size = new System.Drawing.Size(624, 624);
             this.alapPANEL.TabIndex = 0;
             // 
+            // oraTIMER
+            // 
+            this.oraTIMER.Interval = 1000;
+            this.oraTIMER.Tick += new System.EventHandler(this.oraTIMER_Tick);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Location = new System.Drawing.Point(703, 133);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(214, 67);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Start";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // timePANEL
+            // 
+            this.timePANEL.BackColor = System.Drawing.Color.Gray;
+            this.timePANEL.Location = new System.Drawing.Point(642, 12);
+            this.timePANEL.Name = "timePANEL";
+            this.timePANEL.Size = new System.Drawing.Size(320, 100);
+            this.timePANEL.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(955, 647);
+            this.ClientSize = new System.Drawing.Size(970, 647);
+            this.Controls.Add(this.timePANEL);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.alapPANEL);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -57,6 +87,9 @@ namespace _2021_10_13_tron_game_GE
         #endregion
 
         private System.Windows.Forms.Panel alapPANEL;
+        private System.Windows.Forms.Timer oraTIMER;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel timePANEL;
     }
 }
 

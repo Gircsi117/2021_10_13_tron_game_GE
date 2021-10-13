@@ -12,7 +12,7 @@ namespace _2021_10_13_tron_game_GE
 {
     public partial class Form1 : Form
     {
-        public static int meret = 50; //A pálya méretét adja meg
+        public static int meret = 30; //A pálya méretét adja meg
         public static Panel[,] palya;
         
 
@@ -60,12 +60,63 @@ namespace _2021_10_13_tron_game_GE
                 x = 12;
             }
 
+            timer_general();
+
             player_general();
+        }
+
+        private void timer_general()
+        {
+            Label timerLBL = new Label();
+            timePANEL.Controls.Add(timerLBL);
+            timerLBL.Text = "00:00";
+            timerLBL.TextAlign = ContentAlignment.MiddleCenter;
+            timerLBL.Size = new Size(320, 100);
+            timerLBL.Location = new Point(0, 0);
+            timerLBL.Font = new Font("Arial", 48);
+        }
+
+        private void set_timer()
+        {
+            int perc = Convert.ToInt32(timePANEL.Controls[0].Text.Split(':')[0]);
+            int mp = Convert.ToInt32(timePANEL.Controls[0].Text.Split(':')[1]) + 1;
+            string ido = "";
+
+            if (mp == 60)
+            {
+                perc++;
+                mp = 0;
+            }
+
+            if (perc < 10)
+            {
+                ido += "0";
+            }
+            ido += $"{perc}:";
+
+            if (mp < 10)
+            {
+                ido += "0";
+            }
+            ido += $"{mp}";
+
+            timePANEL.Controls[0].Text = ido;
         }
 
         private void player_general()
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            oraTIMER.Enabled = true;
+            oraTIMER.Start();
+        }
+
+        private void oraTIMER_Tick(object sender, EventArgs e)
+        {
+            set_timer();
         }
     }
 }
