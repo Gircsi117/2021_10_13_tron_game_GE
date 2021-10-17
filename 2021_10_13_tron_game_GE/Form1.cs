@@ -139,19 +139,19 @@ namespace _2021_10_13_tron_game_GE
             if ((players[0].Sor + players[0].irany_mozog()[0] == players[1].Sor + players[1].irany_mozog()[0]) &&
                 (players[0].Oszlop + players[0].irany_mozog()[1] == players[1].Oszlop + players[1].irany_mozog()[1]))
             {
-                gameover("Döntetlen");
+                gameover($"Döntetlen!\nJátékidő: {timerLBL.Text}");
             }
             else if (!szabade(players[0]) && !szabade(players[1]))
             {
-                gameover("Döntetlen");
+                gameover($"Döntetlen!\nJátékidő: {timerLBL.Text}");
             }
             else if (!szabade(players[0]))
             {
-                gameover("Player 2 győzött");
+                gameover($"Player 2 győzött!\nJátékidő: {timerLBL.Text}");
             }
             else if (!szabade(players[1]))
             {
-                gameover("Player 1 győzött");
+                gameover($"Player 1 győzött!\nJátékidő: {timerLBL.Text}");
             }
             else
             {
