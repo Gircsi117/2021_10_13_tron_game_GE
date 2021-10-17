@@ -25,7 +25,6 @@ namespace _2021_10_13_tron_game_GE
         private void Form1_Load(object sender, EventArgs e)
         {
             general();
-            timer_general();
 
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
@@ -69,31 +68,20 @@ namespace _2021_10_13_tron_game_GE
         private void player_general()
         {
             players.Clear();
-            int irany = 1;
-            int sor = 15;
-            int oszlop = 3;
+            int irany = 3;
+            int sor = 10;
+            int oszlop = 10;
 
             for (int i = 0; i < 2; i++)
             {
                 players.Add(new Player(sor, oszlop, irany, new int[3]{Colors[i, 0], Colors[i, 1], Colors[i, 2] }, Colors[i, 3]));
 
-                irany += 3;
-                sor = 3;
-                oszlop = 15;
+                irany = 1;
+                sor = 19;
+                oszlop = 19;
 
                 palya[players[i].Sor, players[i].Oszlop].BackColor = Color.FromArgb(players[i].Color[0], players[i].Color[1], players[i].Color[2]);
             }
-        }
-
-        private void timer_general()
-        {
-            Label timerLBL = new Label();
-            timePANEL.Controls.Add(timerLBL);
-            timerLBL.Text = "00:00";
-            timerLBL.TextAlign = ContentAlignment.MiddleCenter;
-            timerLBL.Size = new Size(317, 100);
-            timerLBL.Location = new Point(0, 0);
-            timerLBL.Font = new Font("Arial", 60);
         }
 
         private void set_timer()
@@ -201,7 +189,7 @@ namespace _2021_10_13_tron_game_GE
                     palya[i, j].BackColor = Color.Gray;
                 }
             }
-            timePANEL.Controls[0].Text = "00:00";
+            timerLBL.Text = "00:00";
             startBTN.Enabled = true;
             settingsPANEL.Enabled = true;
         }

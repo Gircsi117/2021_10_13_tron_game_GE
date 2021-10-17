@@ -61,6 +61,8 @@ namespace _2021_10_13_tron_game_GE
             this.sp1_1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.moveTIMER = new System.Windows.Forms.Timer(this.components);
+            this.timerLBL = new System.Windows.Forms.Label();
+            this.timePANEL.SuspendLayout();
             this.settingsPANEL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sp2_cA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sp2_cB)).BeginInit();
@@ -89,10 +91,11 @@ namespace _2021_10_13_tron_game_GE
             // 
             // startBTN
             // 
+            this.startBTN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.startBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.startBTN.Location = new System.Drawing.Point(697, 117);
+            this.startBTN.Location = new System.Drawing.Point(618, 117);
             this.startBTN.Name = "startBTN";
-            this.startBTN.Size = new System.Drawing.Size(151, 60);
+            this.startBTN.Size = new System.Drawing.Size(317, 60);
             this.startBTN.TabIndex = 1;
             this.startBTN.Text = "Start";
             this.startBTN.UseVisualStyleBackColor = true;
@@ -101,6 +104,8 @@ namespace _2021_10_13_tron_game_GE
             // timePANEL
             // 
             this.timePANEL.BackColor = System.Drawing.Color.Gray;
+            this.timePANEL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.timePANEL.Controls.Add(this.timerLBL);
             this.timePANEL.Location = new System.Drawing.Point(618, 12);
             this.timePANEL.Name = "timePANEL";
             this.timePANEL.Size = new System.Drawing.Size(317, 100);
@@ -147,6 +152,7 @@ namespace _2021_10_13_tron_game_GE
             // 
             // sp2_cA
             // 
+            this.sp2_cA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sp2_cA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.sp2_cA.Location = new System.Drawing.Point(57, 380);
             this.sp2_cA.Maximum = new decimal(new int[] {
@@ -177,6 +183,7 @@ namespace _2021_10_13_tron_game_GE
             // 
             // sp2_cB
             // 
+            this.sp2_cB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sp2_cB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.sp2_cB.Location = new System.Drawing.Point(57, 345);
             this.sp2_cB.Maximum = new decimal(new int[] {
@@ -202,6 +209,7 @@ namespace _2021_10_13_tron_game_GE
             // 
             // sp2_cG
             // 
+            this.sp2_cG.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sp2_cG.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.sp2_cG.Location = new System.Drawing.Point(57, 310);
             this.sp2_cG.Maximum = new decimal(new int[] {
@@ -232,6 +240,7 @@ namespace _2021_10_13_tron_game_GE
             // 
             // sp2_cR
             // 
+            this.sp2_cR.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sp2_cR.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.sp2_cR.Location = new System.Drawing.Point(57, 275);
             this.sp2_cR.Maximum = new decimal(new int[] {
@@ -296,6 +305,7 @@ namespace _2021_10_13_tron_game_GE
             // 
             // sp1_cA
             // 
+            this.sp1_cA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sp1_cA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.sp1_cA.Location = new System.Drawing.Point(57, 193);
             this.sp1_cA.Maximum = new decimal(new int[] {
@@ -316,13 +326,14 @@ namespace _2021_10_13_tron_game_GE
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
+            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(72, 8);
+            this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(171, 37);
+            this.label5.Size = new System.Drawing.Size(317, 48);
             this.label5.TabIndex = 5;
             this.label5.Text = "Beállítások";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -336,6 +347,7 @@ namespace _2021_10_13_tron_game_GE
             // 
             // sp1_cB
             // 
+            this.sp1_cB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sp1_cB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.sp1_cB.Location = new System.Drawing.Point(57, 158);
             this.sp1_cB.Maximum = new decimal(new int[] {
@@ -361,6 +373,7 @@ namespace _2021_10_13_tron_game_GE
             // 
             // sp1_cG
             // 
+            this.sp1_cG.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sp1_cG.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.sp1_cG.Location = new System.Drawing.Point(57, 123);
             this.sp1_cG.Maximum = new decimal(new int[] {
@@ -386,6 +399,7 @@ namespace _2021_10_13_tron_game_GE
             // 
             // sp1_cR
             // 
+            this.sp1_cR.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sp1_cR.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.sp1_cR.Location = new System.Drawing.Point(57, 88);
             this.sp1_cR.Maximum = new decimal(new int[] {
@@ -448,6 +462,17 @@ namespace _2021_10_13_tron_game_GE
             this.moveTIMER.Interval = 500;
             this.moveTIMER.Tick += new System.EventHandler(this.moveTIMER_Tick);
             // 
+            // timerLBL
+            // 
+            this.timerLBL.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timerLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.timerLBL.Location = new System.Drawing.Point(0, 0);
+            this.timerLBL.Name = "timerLBL";
+            this.timerLBL.Size = new System.Drawing.Size(315, 98);
+            this.timerLBL.TabIndex = 0;
+            this.timerLBL.Text = "00:00";
+            this.timerLBL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -465,6 +490,7 @@ namespace _2021_10_13_tron_game_GE
             this.Text = "Tron_Game_GE";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.timePANEL.ResumeLayout(false);
             this.settingsPANEL.ResumeLayout(false);
             this.settingsPANEL.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sp2_cA)).EndInit();
@@ -514,6 +540,7 @@ namespace _2021_10_13_tron_game_GE
         private System.Windows.Forms.Panel sp1_2;
         private System.Windows.Forms.Panel sp1_1;
         private System.Windows.Forms.Timer moveTIMER;
+        private System.Windows.Forms.Label timerLBL;
     }
 }
 
