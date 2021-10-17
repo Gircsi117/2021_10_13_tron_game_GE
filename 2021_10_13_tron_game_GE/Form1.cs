@@ -68,6 +68,7 @@ namespace _2021_10_13_tron_game_GE
 
         private void player_general()
         {
+            players.Clear();
             int irany = 1;
             int sor = 15;
             int oszlop = 3;
@@ -92,7 +93,7 @@ namespace _2021_10_13_tron_game_GE
             timerLBL.TextAlign = ContentAlignment.MiddleCenter;
             timerLBL.Size = new Size(317, 100);
             timerLBL.Location = new Point(0, 0);
-            timerLBL.Font = new Font("Arial", 48);
+            timerLBL.Font = new Font("Arial", 60);
         }
 
         private void set_timer()
@@ -150,23 +151,19 @@ namespace _2021_10_13_tron_game_GE
             if ((players[0].Sor + players[0].irany_mozog()[0] == players[1].Sor + players[1].irany_mozog()[0]) &&
                 (players[0].Oszlop + players[0].irany_mozog()[1] == players[1].Oszlop + players[1].irany_mozog()[1]))
             {
-                gameover();
-                MessageBox.Show("Döntetlen", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                gameover("Döntetlen");
             }
             else if (!szabade(players[0]) && !szabade(players[1]))
             {
-                gameover();
-                MessageBox.Show("Döntetlen", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                gameover("Döntetlen");
             }
             else if (!szabade(players[0]))
             {
-                gameover();
-                MessageBox.Show("Player 2 győzött", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                gameover("Player 2 győzött");
             }
             else if (!szabade(players[1]))
             {
-                gameover();
-                MessageBox.Show("Player 1 győzött", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                gameover("Player 1 győzött");
             }
             else
             {
@@ -187,10 +184,26 @@ namespace _2021_10_13_tron_game_GE
             }
         }
 
-        private void gameover()
+        private void gameover(string szoveg)
         {
             moveTIMER.Stop();
             oraTIMER.Stop();
+            MessageBox.Show($"{szoveg}", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            restart();
+        }
+
+        private void restart()
+        {
+            for (int i = 1; i < meret-1; i++)
+            {
+                for (int j = 1; j < meret-1; j++)
+                {
+                    palya[i, j].BackColor = Color.Gray;
+                }
+            }
+            timePANEL.Controls[0].Text = "00:00";
+            startBTN.Enabled = true;
+            settingsPANEL.Enabled = true;
         }
 
         private void oraTIMER_Tick(object sender, EventArgs e)
