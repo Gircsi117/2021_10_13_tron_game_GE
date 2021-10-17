@@ -11,27 +11,39 @@ namespace _2021_10_13_tron_game_GE
         private int sor;
         private int oszlop;
         private int irany;
-        private int[] p_color;
-        private int[] l_color;
+        private int[] color;
+        private int l_color;
 
         public int Sor { get => sor; set => sor = value; }
         public int Oszlop { get => oszlop; set => oszlop = value; }
         public int Irany { get => irany; set => irany = value; }
-        public int[] P_color { get => p_color; set => p_color = value; }
-        public int[] L_color { get => l_color; set => l_color = value; }
+        public int[] Color { get => color; set => color = value; }
+        public int L_color { get => l_color; set => l_color = value; }
 
-        public Player(int sor, int oszlop, int irany, int[] p_color, int[] l_color)
+        public Player(int sor, int oszlop, int irany, int[] p_color, int l_color)
         {
             this.sor = sor;
             this.oszlop = oszlop;
             this.irany = irany;
-            this.p_color = new int[4];
-            this.l_color = new int[4];
+            this.color = new int[3];
+            this.l_color = l_color;
 
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 3; i++)
             {
-                this.p_color[i] = p_color[i];
-                this.l_color[i] = l_color[i];
+                this.color[i] = p_color[i];
+            }
+        }
+
+        public int[] irany_mozog()
+        {
+            switch (this.irany)
+            {
+                case 1: return new int[] { -1, 0 }; //fel
+                case 2: return new int[] { 0, 1 }; //jobbra
+                case 3: return new int[] { 1, 0 }; //le
+                case 4: return new int[] { 0, -1 }; //balra
+
+                default: return new int[] { 0, 0 };
             }
         }
     }

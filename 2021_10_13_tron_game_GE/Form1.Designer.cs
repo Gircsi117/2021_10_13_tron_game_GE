@@ -32,7 +32,7 @@ namespace _2021_10_13_tron_game_GE
             this.components = new System.ComponentModel.Container();
             this.alapPANEL = new System.Windows.Forms.Panel();
             this.oraTIMER = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
+            this.startBTN = new System.Windows.Forms.Button();
             this.timePANEL = new System.Windows.Forms.Panel();
             this.settingsPANEL = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -60,6 +60,7 @@ namespace _2021_10_13_tron_game_GE
             this.sp1_2 = new System.Windows.Forms.Panel();
             this.sp1_1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.moveTIMER = new System.Windows.Forms.Timer(this.components);
             this.settingsPANEL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sp2_cA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sp2_cB)).BeginInit();
@@ -78,7 +79,7 @@ namespace _2021_10_13_tron_game_GE
             this.alapPANEL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.alapPANEL.Location = new System.Drawing.Point(12, 12);
             this.alapPANEL.Name = "alapPANEL";
-            this.alapPANEL.Size = new System.Drawing.Size(624, 624);
+            this.alapPANEL.Size = new System.Drawing.Size(600, 600);
             this.alapPANEL.TabIndex = 0;
             // 
             // oraTIMER
@@ -86,21 +87,21 @@ namespace _2021_10_13_tron_game_GE
             this.oraTIMER.Interval = 1000;
             this.oraTIMER.Tick += new System.EventHandler(this.oraTIMER_Tick);
             // 
-            // button1
+            // startBTN
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(699, 125);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(214, 67);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Start";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.startBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.startBTN.Location = new System.Drawing.Point(697, 117);
+            this.startBTN.Name = "startBTN";
+            this.startBTN.Size = new System.Drawing.Size(151, 60);
+            this.startBTN.TabIndex = 1;
+            this.startBTN.Text = "Start";
+            this.startBTN.UseVisualStyleBackColor = true;
+            this.startBTN.Click += new System.EventHandler(this.startBTN_Click);
             // 
             // timePANEL
             // 
             this.timePANEL.BackColor = System.Drawing.Color.Gray;
-            this.timePANEL.Location = new System.Drawing.Point(642, 12);
+            this.timePANEL.Location = new System.Drawing.Point(618, 12);
             this.timePANEL.Name = "timePANEL";
             this.timePANEL.Size = new System.Drawing.Size(317, 100);
             this.timePANEL.TabIndex = 3;
@@ -129,7 +130,7 @@ namespace _2021_10_13_tron_game_GE
             this.settingsPANEL.Controls.Add(this.sp1_cR);
             this.settingsPANEL.Controls.Add(this.panel2);
             this.settingsPANEL.Controls.Add(this.label1);
-            this.settingsPANEL.Location = new System.Drawing.Point(642, 206);
+            this.settingsPANEL.Location = new System.Drawing.Point(618, 183);
             this.settingsPANEL.Name = "settingsPANEL";
             this.settingsPANEL.Size = new System.Drawing.Size(317, 429);
             this.settingsPANEL.TabIndex = 4;
@@ -247,6 +248,7 @@ namespace _2021_10_13_tron_game_GE
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Gray;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.sp2_2);
             this.panel5.Controls.Add(this.sp2_1);
             this.panel5.Location = new System.Drawing.Point(171, 238);
@@ -257,6 +259,7 @@ namespace _2021_10_13_tron_game_GE
             // sp2_2
             // 
             this.sp2_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            this.sp2_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sp2_2.Location = new System.Drawing.Point(43, 89);
             this.sp2_2.Name = "sp2_2";
             this.sp2_2.Size = new System.Drawing.Size(50, 50);
@@ -265,6 +268,7 @@ namespace _2021_10_13_tron_game_GE
             // sp2_1
             // 
             this.sp2_1.BackColor = System.Drawing.Color.Lime;
+            this.sp2_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sp2_1.Location = new System.Drawing.Point(43, 40);
             this.sp2_1.Name = "sp2_1";
             this.sp2_1.Size = new System.Drawing.Size(50, 50);
@@ -403,6 +407,7 @@ namespace _2021_10_13_tron_game_GE
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.sp1_2);
             this.panel2.Controls.Add(this.sp1_1);
             this.panel2.Location = new System.Drawing.Point(171, 51);
@@ -413,6 +418,7 @@ namespace _2021_10_13_tron_game_GE
             // sp1_2
             // 
             this.sp1_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.sp1_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sp1_2.Location = new System.Drawing.Point(43, 89);
             this.sp1_2.Name = "sp1_2";
             this.sp1_2.Size = new System.Drawing.Size(50, 50);
@@ -421,6 +427,7 @@ namespace _2021_10_13_tron_game_GE
             // sp1_1
             // 
             this.sp1_1.BackColor = System.Drawing.Color.Red;
+            this.sp1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sp1_1.Location = new System.Drawing.Point(43, 40);
             this.sp1_1.Name = "sp1_1";
             this.sp1_1.Size = new System.Drawing.Size(50, 50);
@@ -436,19 +443,28 @@ namespace _2021_10_13_tron_game_GE
             this.label1.TabIndex = 0;
             this.label1.Text = "Player 1:";
             // 
+            // moveTIMER
+            // 
+            this.moveTIMER.Interval = 500;
+            this.moveTIMER.Tick += new System.EventHandler(this.moveTIMER_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(971, 647);
+            this.ClientSize = new System.Drawing.Size(946, 622);
             this.Controls.Add(this.settingsPANEL);
             this.Controls.Add(this.timePANEL);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.startBTN);
             this.Controls.Add(this.alapPANEL);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Tron_Game_GE";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.settingsPANEL.ResumeLayout(false);
             this.settingsPANEL.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sp2_cA)).EndInit();
@@ -469,7 +485,7 @@ namespace _2021_10_13_tron_game_GE
 
         private System.Windows.Forms.Panel alapPANEL;
         private System.Windows.Forms.Timer oraTIMER;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button startBTN;
         private System.Windows.Forms.Panel timePANEL;
         private System.Windows.Forms.Panel settingsPANEL;
         private System.Windows.Forms.Panel panel2;
@@ -497,6 +513,7 @@ namespace _2021_10_13_tron_game_GE
         private System.Windows.Forms.NumericUpDown sp1_cA;
         private System.Windows.Forms.Panel sp1_2;
         private System.Windows.Forms.Panel sp1_1;
+        private System.Windows.Forms.Timer moveTIMER;
     }
 }
 

@@ -14,9 +14,8 @@ namespace _2021_10_13_tron_game_GE
     {
         public static int meret = 30; //A pálya méretét adja meg
         public static Panel[,] palya;
-        public static int[,] p_colors = new int[2, 4] { {255,0,0,100 },{0,255,0,100 } };
-
-        
+        public static int[,] Colors = new int[2, 4] { {255, 0, 0, 100 },{0, 255, 0, 100 } };
+        private List<Player> players = new List<Player>() { };
 
         public Form1()
         {
@@ -26,13 +25,16 @@ namespace _2021_10_13_tron_game_GE
         private void Form1_Load(object sender, EventArgs e)
         {
             general();
+            timer_general();
+
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void general()
         {
             palya = new Panel[meret, meret];
-            int x = 12;
-            int y = 12;
+            int x = 0;
+            int y = 0;
 
             for (int i = 0; i < meret; i++)
             {
@@ -59,12 +61,27 @@ namespace _2021_10_13_tron_game_GE
                     x += (600 / meret);
                 }
                 y += (600 / meret);
-                x = 12;
+                x = 0;
             }
+            alapPANEL.BackColor = Color.Gray;
+        }
 
-            timer_general();
+        private void player_general()
+        {
+            int irany = 1;
+            int sor = 15;
+            int oszlop = 3;
 
-            player_general();
+            for (int i = 0; i < 2; i++)
+            {
+                players.Add(new Player(sor, oszlop, irany, new int[3]{Colors[i, 0], Colors[i, 1], Colors[i, 2] }, Colors[i, 3]));
+
+                irany += 3;
+                sor = 3;
+                oszlop = 15;
+
+                palya[players[i].Sor, players[i].Oszlop].BackColor = Color.FromArgb(players[i].Color[0], players[i].Color[1], players[i].Color[2]);
+            }
         }
 
         private void timer_general()
@@ -105,11 +122,6 @@ namespace _2021_10_13_tron_game_GE
             timePANEL.Controls[0].Text = ido;
         }
 
-        private void player_general()
-        {
-
-        }
-
         private void sett_szinez(object sender, EventArgs e)
         {
             sp1_1.BackColor = Color.FromArgb(Convert.ToInt32(sp1_cR.Value), Convert.ToInt32(sp1_cG.Value), Convert.ToInt32(sp1_cB.Value));
@@ -117,17 +129,113 @@ namespace _2021_10_13_tron_game_GE
             
             sp2_1.BackColor = Color.FromArgb(Convert.ToInt32(sp2_cR.Value), Convert.ToInt32(sp2_cG.Value), Convert.ToInt32(sp2_cB.Value));
             sp2_2.BackColor = Color.FromArgb(Convert.ToInt32(sp2_cA.Value), Convert.ToInt32(sp2_cR.Value), Convert.ToInt32(sp2_cG.Value), Convert.ToInt32(sp2_cB.Value));
+
+            Colors = new int[2, 4] {
+                {Convert.ToInt32(sp1_cR.Value), Convert.ToInt32(sp1_cG.Value), Convert.ToInt32(sp1_cB.Value), Convert.ToInt32(sp1_cA.Value)},
+                {Convert.ToInt32(sp2_cR.Value), Convert.ToInt32(sp2_cG.Value), Convert.ToInt32(sp2_cB.Value), Convert.ToInt32(sp2_cA.Value)}
+            };
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private bool szabade(Player player)
         {
-            oraTIMER.Enabled = true;
-            oraTIMER.Start();
+            if (palya[player.Sor + player.irany_mozog()[0], player.Oszlop + player.irany_mozog()[1]].BackColor != Color.Gray)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        private void ellenoriz()
+        {
+            if ((players[0].Sor + players[0].irany_mozog()[0] == players[1].Sor + players[1].irany_mozog()[0]) &&
+                (players[0].Oszlop + players[0].irany_mozog()[1] == players[1].Oszlop + players[1].irany_mozog()[1]))
+            {
+                gameover();
+                MessageBox.Show("Döntetlen", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (!szabade(players[0]) && !szabade(players[1]))
+            {
+                gameover();
+                MessageBox.Show("Döntetlen", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (!szabade(players[0]))
+            {
+                gameover();
+                MessageBox.Show("Player 2 győzött", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (!szabade(players[1]))
+            {
+                gameover();
+                MessageBox.Show("Player 1 győzött", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                mozog();
+            }
+        }
+
+        private void mozog()
+        {
+            for (int i = 0; i < 2; i++)
+            {
+                palya[players[i].Sor, players[i].Oszlop].BackColor = Color.FromArgb(players[i].L_color, players[i].Color[0], players[i].Color[1], players[i].Color[2]);
+
+                players[i].Sor += players[i].irany_mozog()[0];
+                players[i].Oszlop += players[i].irany_mozog()[1];
+
+                palya[players[i].Sor, players[i].Oszlop].BackColor = Color.FromArgb(players[i].Color[0], players[i].Color[1], players[i].Color[2]);
+            }
+        }
+
+        private void gameover()
+        {
+            moveTIMER.Stop();
+            oraTIMER.Stop();
         }
 
         private void oraTIMER_Tick(object sender, EventArgs e)
         {
             set_timer();
+        }
+
+        private void moveTIMER_Tick(object sender, EventArgs e)
+        {
+            ellenoriz();
+        }
+
+        private void startBTN_Click(object sender, EventArgs e)
+        {
+            player_general();
+
+            oraTIMER.Enabled = true;
+            oraTIMER.Start();
+
+            moveTIMER.Enabled = true;
+            moveTIMER.Start();
+
+            startBTN.Enabled = false;
+            settingsPANEL.Enabled = false;
+
+            this.Focus();
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.SuppressKeyPress = true;
+            switch (e.KeyCode)
+            {
+                case Keys.Left: players[1].Irany = 4; break;
+                case Keys.Up: players[1].Irany = 1; break;
+                case Keys.Right: players[1].Irany = 2; break;
+                case Keys.Down: players[1].Irany = 3; break;
+
+                case Keys.A: players[0].Irany = 4; break;
+                case Keys.W: players[0].Irany = 1; break;
+                case Keys.D: players[0].Irany = 2; break;
+                case Keys.S: players[0].Irany = 3; break;
+
+                default: break;
+            }
         }
     }
 }
